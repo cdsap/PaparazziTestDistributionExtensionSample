@@ -39,5 +39,4 @@ jobs:
         with:
           name: test-reports-${{matrix.os}}-${{matrix.java-version}}
           path: |
-            lib/build/reports/tests/
-            gradle-plugin/build/reports/tests/
+            android-library/build/reports
