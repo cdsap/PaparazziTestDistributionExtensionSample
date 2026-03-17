@@ -56,7 +56,7 @@ tasks.withType<Test>().configureEach {
 }
 ```
 
-Note: The Paparazzi intermediates and layoutlib resources are declared as task inputs so they are transferred to remote executors(issue [cashapp/paparazzi#2292](https://github.com/cashapp/paparazzi/issues/2292))
+
 
 ## Compatibility
 
