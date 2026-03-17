@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+plugins {
+    id("com.gradle.common-custom-user-data-gradle-plugin") version "2.4.0"
+    id("com.gradle.develocity") version "4.3.2"
+}
+
+develocity {
+    server = "https://136-117-58-0.nip.io/"
+    allowUntrustedServer = true
+    buildScan {
+        uploadInBackground = true
+        publishing.onlyIf { true }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "td-paparazzi-sample"
+include ':android-library'
